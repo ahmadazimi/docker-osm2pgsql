@@ -1,7 +1,7 @@
 # DOCKER-VERSION 24.0.7
 # VERSION 1.1
 
-FROM debian:bookworm
+FROM debian:stable-slim
 
 ENV DEBIAN_FRONTEND noninteractive
 
