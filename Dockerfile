@@ -1,5 +1,5 @@
 # DOCKER-VERSION 24.0.7
-# VERSION 1.0
+# VERSION 1.1
 
 FROM debian:bookworm
 
@@ -25,11 +25,12 @@ RUN apt-get update && apt-get install -y \
     libluajit-5.1-dev \
     pandoc \
     nlohmann-json3-dev \
+    python3-psycopg \
     pyosmium &&\
     rm -rf /var/lib/apt/lists/*
 
 ENV HOME /root
-ENV OSM2PGSQL_VERSION 1.9.2
+ENV OSM2PGSQL_VERSION 1.10.0
 
 RUN mkdir src &&\
     cd src &&\
