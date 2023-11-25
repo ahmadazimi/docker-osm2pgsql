@@ -1,5 +1,5 @@
 # DOCKER-VERSION 24.0.7
-# VERSION 1.1
+# VERSION 1.10.0
 
 FROM debian:stable-slim
 
